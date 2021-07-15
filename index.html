@@ -23,11 +23,13 @@
     <script defer>
         setInterval(() => {
             console.log("Executed")
-            document.getElementById("Schimmer").style.top = "2000px";
+            setTimeout(() => {
+                 document.getElementById("Schimmer").style.top = "2000px";
+            }, 100}
             $('#Schimmer').animate({
                 top: '-600px'
             }, 3000)
-        }, 3000);
+        }, 3300);
     </script>
     <img src="Plakat.png" style="width: 1080px; height: 1920px; margin: 0; padding: 0;">
 </body>
