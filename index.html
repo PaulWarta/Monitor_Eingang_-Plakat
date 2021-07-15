@@ -7,6 +7,16 @@
     <title>Plakat für den Eingangsmonitor</title>
 </head>
 <body style="margin: 0; padding: 0;">
+    <div id="Schimmer"></div>
+    <script defer>
+        setInterval(() => {
+            console.log("Executed")
+            document.getElementById("Schimmer").style.top = "2000px";
+            $('#Schimmer').animate({
+                top: '-200px'
+            }, 3000)
+        }, 10000);
+    </script>
     <img src="Plakat.png" style="width: 1080px; height: 1920px; margin: 0; padding: 0;">
 </body>
 </html>
